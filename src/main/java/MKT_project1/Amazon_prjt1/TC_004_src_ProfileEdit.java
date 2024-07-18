@@ -54,8 +54,8 @@ public class TC_004_src_ProfileEdit {
 	}
 	
 	public void prefdepatment() {
-		WebDriverWait e=new WebDriverWait(driver,Duration.ofSeconds(10));
-		e.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class=\"accordion\"]/div)[1]"));
+	//	WebDriverWait e=new WebDriverWait(driver,Duration.ofSeconds(10));
+		//e.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class=\"accordion\"]/div)[1]")));
 		Prefdept.click();
 	}
 	/*public void pdaddbtn() {

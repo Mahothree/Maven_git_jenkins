@@ -1,21 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-16T00:11:15 IST" name="Default suite" finished-at="2024-07-16T00:11:50 IST" duration-ms="34354">
+  <suite started-at="2024-07-19T00:24:03 IST" name="Suite" finished-at="2024-07-19T00:29:49 IST" duration-ms="346095">
     <groups>
     </groups>
-    <test started-at="2024-07-16T00:11:15 IST" name="Default test" finished-at="2024-07-16T00:11:50 IST" duration-ms="34354">
-      <class name="MKT_project1.Amazon_prjt1.TC_004_profileEdit">
-        <test-method signature="editprofile()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_004_profileEdit@2e6a8155]" started-at="2024-07-16T00:11:15 IST" name="editprofile" finished-at="2024-07-16T00:11:49 IST" duration-ms="34009" status="FAIL">
-          <exception class="java.lang.ClassCastException">
+    <test started-at="2024-07-19T00:24:03 IST" name="Test" finished-at="2024-07-19T00:29:49 IST" duration-ms="346095">
+      <class name="MKT_project1.Amazon_prjt1.TC_003_invalid_login">
+        <test-method signature="invalid_login()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_003_invalid_login@71ba6d4e]" started-at="2024-07-19T00:26:29 IST" name="invalid_login" finished-at="2024-07-19T00:26:51 IST" duration-ms="21694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_login -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_003_invalid_login -->
+      <class name="MKT_project1.Amazon_prjt1.TC_010_updatingQuantity_removingitems">
+        <test-method signature="Prdt_cart()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_010_updatingQuantity_removingitems@1a942c18]" started-at="2024-07-19T00:25:07 IST" name="Prdt_cart" finished-at="2024-07-19T00:25:54 IST" duration-ms="47077" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[class jdk.proxy2.$Proxy10 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy10 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a"}
+  (Session info: chrome=126.0.6478.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1135ebb05d9297e2318b3fbb21d600dd, findElement {value=/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63910}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63910/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1135ebb05d9297e2318b3fbb21d600dd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class jdk.proxy2.$Proxy10 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy10 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
-at MKT_project1.Amazon_prjt1.TC_004_src_ProfileEdit.prefdepatment(TC_004_src_ProfileEdit.java:58)
-at MKT_project1.Amazon_prjt1.TC_004_profileEdit.editprofile(TC_004_profileEdit.java:42)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a"}
+  (Session info: chrome=126.0.6478.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1135ebb05d9297e2318b3fbb21d600dd, findElement {value=/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63910}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63910/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1135ebb05d9297e2318b3fbb21d600dd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+at MKT_project1.Amazon_prjt1.TC_009_src_Addtocart.gotocartbtn(TC_009_src_Addtocart.java:23)
+at MKT_project1.Amazon_prjt1.TC_010_updatingQuantity_removingitems.Prdt_cart(TC_010_updatingQuantity_removingitems.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,11 +87,165 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editprofile -->
-      </class> <!-- MKT_project1.Amazon_prjt1.TC_004_profileEdit -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Prdt_cart -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_010_updatingQuantity_removingitems -->
+      <class name="MKT_project1.Amazon_prjt1.TC_006_searchwithfilters">
+        <test-method signature="filter_category_prize()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_006_searchwithfilters@55a147cc]" started-at="2024-07-19T00:25:54 IST" name="filter_category_prize" finished-at="2024-07-19T00:26:29 IST" duration-ms="34880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter_category_prize -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_006_searchwithfilters -->
+      <class name="MKT_project1.Amazon_prjt1.TC_008_relavence_price_ratings">
+        <test-method signature="sorting()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_008_relavence_price_ratings@63376bed]" started-at="2024-07-19T00:27:50 IST" name="sorting" finished-at="2024-07-19T00:28:29 IST" duration-ms="39528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sorting -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_008_relavence_price_ratings -->
+      <class name="MKT_project1.Amazon_prjt1.TC_002_Valid_login">
+        <test-method signature="login()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_002_Valid_login@738dc9b]" started-at="2024-07-19T00:26:51 IST" name="login" finished-at="2024-07-19T00:27:16 IST" duration-ms="25403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_002_Valid_login -->
+      <class name="MKT_project1.Amazon_prjt1.TC_005_shoesearchbyName">
+        <test-method signature="search()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_005_shoesearchbyName@3c77d488]" started-at="2024-07-19T00:27:16 IST" name="search" finished-at="2024-07-19T00:27:50 IST" duration-ms="33553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_005_shoesearchbyName -->
+      <class name="MKT_project1.Amazon_prjt1.TC_007_productdetails">
+        <test-method signature="product_details()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_007_productdetails@38cee291]" started-at="2024-07-19T00:24:03 IST" name="product_details" finished-at="2024-07-19T00:25:07 IST" duration-ms="63836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- product_details -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_007_productdetails -->
+      <class name="MKT_project1.Amazon_prjt1.TC_009_Addtocart">
+        <test-method signature="Prdt_cart()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_009_Addtocart@d86a6f]" started-at="2024-07-19T00:29:00 IST" name="Prdt_cart" finished-at="2024-07-19T00:29:49 IST" duration-ms="48888" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a"}
+  (Session info: chrome=126.0.6478.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74f198eb09c5e47ac79fbfaeebcb4dff, findElement {value=/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64713/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74f198eb09c5e47ac79fbfaeebcb4dff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a"}
+  (Session info: chrome=126.0.6478.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74f198eb09c5e47ac79fbfaeebcb4dff, findElement {value=/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64713/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74f198eb09c5e47ac79fbfaeebcb4dff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+at MKT_project1.Amazon_prjt1.TC_009_Addtocart.Prdt_cart(TC_009_Addtocart.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Prdt_cart -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_009_Addtocart -->
+      <class name="MKT_project1.Amazon_prjt1.TC_001_Registration">
+        <test-method signature="register()[pri:0, instance:MKT_project1.Amazon_prjt1.TC_001_Registration@4145bad8]" started-at="2024-07-19T00:28:30 IST" name="register" finished-at="2024-07-19T00:29:00 IST" duration-ms="30823" status="FAIL">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[authentication expected:<A[mazon Phone Verification]> but was:<A[uthentication required]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: authentication expected:<A[mazon Phone Verification]> but was:<A[uthentication required]>
+at org.junit.Assert.assertEquals(Assert.java:115)
+at MKT_project1.Amazon_prjt1.TC_001_Registration.register(TC_001_Registration.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- MKT_project1.Amazon_prjt1.TC_001_Registration -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
