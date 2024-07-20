@@ -45,6 +45,7 @@ public class TC_010_updatingQuantity_removingitems {
 		TC_009_src_Addtocart cartadd=new TC_009_src_Addtocart(driver);
 		cartadd.cartadd();
 		cartadd.gotocartbtn();
+		cartadd.quantity();
 }
 }
 
