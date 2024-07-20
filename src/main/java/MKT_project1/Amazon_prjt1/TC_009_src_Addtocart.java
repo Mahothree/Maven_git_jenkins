@@ -11,11 +11,12 @@ public class TC_009_src_Addtocart {
 	@FindBy(id="add-to-cart-button")
 	WebElement addprdt;
 	
-	@FindBy(xpath="/html/body/div[1]/div[1]/div/div[1]/div[2]/div/span/span/a")
+	@FindBy(id="nav-cart-count-container")
 	WebElement gotocartbn;
+			
+	@FindBy(name="quantity")
+	WebElement quan;
 	
-	@FindBy()
-	WebElement quantitydd;
 	public void cartadd() {
 		addprdt.click();
 	}
@@ -23,7 +24,9 @@ public class TC_009_src_Addtocart {
 		gotocartbn.click();
 	}
 	public void quantity() {
-		gotocartbn.click();
+		Select s1=new Select(quan);
+		s1.selectByVisibleText("1");
+		
 	}
 	public TC_009_src_Addtocart (WebDriver driver) {
 		PageFactory.initElements(driver, this);
