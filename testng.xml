@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="MKT_project1.Amazon_prjt1.TC_007_productdetails"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_010_updatingQuantity_removingitems"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_006_searchwithfilters"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_003_invalid_login"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_004_profileEdit"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_002_Valid_login"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_005_shoesearchbyName"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_008_relavence_price_ratings"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_001_Registration"/>
+      <class name="MKT_project1.Amazon_prjt1.TC_009_Addtocart"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
